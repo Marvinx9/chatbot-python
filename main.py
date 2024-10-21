@@ -12,7 +12,7 @@ class ENGSM:
     ENGLISH_NAME = 'English'
     ISO_639 = 'en'
 
-chatbot = ChatBot('BoraAfranio', tagger_language=ENGSM)
+chatbot = ChatBot('Mavin', tagger_language=ENGSM)
 
 conversa = [
     "Olá, tenho uma dúvida",
@@ -28,7 +28,7 @@ conversa = [
 trainer = ListTrainer(chatbot)
 trainer.train(conversa)
 
-#chatbot.storage.drop() #-- para limpar menória do boot
+#chatbot.storage.drop() #-- para limpar memória do boot
 while True:
     mensagem = input("Mande uma mensagem para o chatbot:")
     if mensagem == 'parar':
